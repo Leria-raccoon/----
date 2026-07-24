@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Валерия — няня с педагогическим подходом</title>
+  <title>Няня</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
     /* ===== ОБЩИЕ СТИЛИ ===== */
@@ -23,7 +23,7 @@
     html { scroll-behavior: smooth; }
     body {
       font-family: 'Inter', sans-serif;
-      background: var(--c1);
+      background: transparent; 
       color: var(--text);
       line-height: 1.7;
     }
@@ -364,13 +364,26 @@
       .carousel-slide { padding: 1rem; }
       .carousel-slide img { max-height: 200px; }
     }
+
+    .bg-video {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
   </style>
 </head>
 <body>
+      <video class="bg-video" autoplay muted loop playsinline>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+  </video>
 
 <!-- ===== NAV ===== -->
 <nav>
-  <div class="nav-logo">🌸 Валерия</div>
+  <div class="nav-logo">Валерия</div>
   <ul class="nav-links" id="navLinks">
     <li><a href="#about">Обо мне</a></li>
     <li><a href="#character">Характер</a></li>
@@ -388,7 +401,7 @@
 <section id="hero">
   <div class="hero-inner">
     <div class="hero-avatar">👩‍🍼</div>
-    <div class="hero-tag">Няня с педагогическим подходом</div>
+    <div class="hero-tag">Няня с трехлетним стажем</div>
     <h1>Валерия</h1>
     <p class="hero-sub">Забота, развитие и безопасность для вашего малыша —<br>с любовью и профессионализмом</p>
     <div class="btn-group">
@@ -408,27 +421,22 @@
         <div class="divider"></div>
         <p><strong>Здравствуйте! Меня зовут Валерия, мне 21 год.</strong></p>
         <p>С самого детства мне доверяли присмотр за родными и двоюродными братьями. Все по маминой линии — учителя, так что педагогика у меня в крови. Всё время учебы я работала няней и присматривала за детьми школьного возраста: делала уроки, гуляла, занималась. Последний год в Москве преимущественно работаю с малышами 2–4 лет. Люблю заниматься с ними творчеством, гулять и развивать.</p>
-        <div class="about-stats">
-          <div class="stat"><div class="stat-num">3</div><div class="stat-label">года опыта</div></div>
-          <div class="stat"><div class="stat-num">3</div><div class="stat-label">семьи</div></div>
-          <div class="stat"><div class="stat-num">❤️</div><div class="stat-label">любовь к детям</div></div>
-        </div>
       </div>
       <div class="about-card">
         <div class="about-item">
-          <div class="about-icon">🎓</div>
+          <div class="about-icon"></div>
           <div><strong>Педагогические корни</strong><span>Мама и бабушка — учителя, педагогика в крови</span></div>
         </div>
         <div class="about-item">
-          <div class="about-icon">🩺</div>
+          <div class="about-icon"></div>
           <div><strong>Сертификат первой помощи</strong><span>Прошла курс, готова к любым ситуациям</span></div>
         </div>
         <div class="about-item">
-          <div class="about-icon">🎨</div>
+          <div class="about-icon"></div>
           <div><strong>Творческий подход</strong><span>Рисование, лепка, оригами — развиваемся играя</span></div>
         </div>
         <div class="about-item">
-          <div class="about-icon">✅</div>
+          <div class="about-icon"></div>
           <div><strong>Полная готовность</strong><span>Нет аллергии, работа с животными, готова к поездкам</span></div>
         </div>
       </div>
